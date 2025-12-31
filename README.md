@@ -1,4 +1,4 @@
-\# Mayday Sipariş Yönetim Modülü (WIP)
+# Mayday Sipariş Yönetim Modülü (WIP)
 
 
 
@@ -6,7 +6,7 @@ Bu proje, Mayday Yazılım yetkinlik değerlendirmesi kapsamında geliştirilmek
 
 
 
-\## 🚀 Proje Hakkında
+## 🚀 Proje Hakkında
 
 Basit bir \*\*Multi-Tenant (Çoklu Kiracı)\*\* yapısına sahip sipariş yönetim sistemidir. 
 
@@ -18,7 +18,7 @@ Basit bir \*\*Multi-Tenant (Çoklu Kiracı)\*\* yapısına sahip sipariş yönet
 
 
 
-\## 📂 Mimari Yaklaşım
+## 📂 Mimari Yaklaşım
 
 Backend tarafında "Clean Architecture" prensiplerine sadık kalınarak, sorumluluklar katmanlara ayrılmıştır:
 
