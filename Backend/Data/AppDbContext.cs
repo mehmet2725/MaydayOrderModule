@@ -9,7 +9,7 @@ public class AppDbContext : DbContext
     //ctor dışarıdan ayar alabilmemizi sağlayan standart yapı
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
-        
+
     }
 
     // Tablolarımız

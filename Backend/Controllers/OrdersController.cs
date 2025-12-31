@@ -51,7 +51,7 @@ public class OrdersController : ControllerBase
 
         order.CreatedDate = DateTime.Now;
 
-       // Ekleme işlemi 
+        // Ekleme işlemi 
         _context.Orders.Add(order);
 
         // Değişiklikleri kaydedeim
