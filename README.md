@@ -1,4 +1,4 @@
-\# Mayday Sipariş Yönetim Modülü (WIP)
+# Mayday Sipariş Yönetim Modülü 
 
 
 
@@ -6,33 +6,33 @@ Bu proje, Mayday Yazılım yetkinlik değerlendirmesi kapsamında geliştirilmek
 
 
 
-\## 🚀 Proje Hakkında
+## 🚀 Proje Hakkında
 
 Basit bir \*\*Multi-Tenant (Çoklu Kiracı)\*\* yapısına sahip sipariş yönetim sistemidir. 
 
-\- \*\*Backend:\*\* .NET Core Web API (ASP.NET Core)
+- *\*Backend:*\* .NET Core Web API (ASP.NET Core)
 
-\- \*\*Veritabanı:\*\* SQLite (Taşınabilirlik ve hız için seçildi)
+- *\*Veritabanı:*\* SQLite (Taşınabilirlik ve hız için seçildi)
 
-\- \*\*Frontend:\*\* React (Geliştirme aşamasında)
+- *\*Frontend:*\* React (Geliştirme aşamasında)
 
 
 
-\## 📂 Mimari Yaklaşım
+## 📂 Mimari Yaklaşım
 
 Backend tarafında "Clean Architecture" prensiplerine sadık kalınarak, sorumluluklar katmanlara ayrılmıştır:
 
-\- \*\*Entities:\*\* Veritabanı varlıkları (Order, OrderItem)
+- *\*Entities:*\* Veritabanı varlıkları (Order, OrderItem)
 
-\- \*\*Data:\*\* Entity Framework Core konfigürasyonları
+- *\*Data:*\* Entity Framework Core konfigürasyonları
 
-\- \*\*Controllers:\*\* API uç noktaları ve Tenant filtreleme mantığı
+- *\*Controllers:*\* API uç noktaları ve Tenant filtreleme mantığı
 
 
 
-\## 🛠️ Kurulum ve Çalıştırma
+## 🛠️ Kurulum ve Çalıştırma
 
-\*(Proje tamamlandığında burası güncellenecektir)\*
+*(Proje tamamlandığında burası güncellenecektir)\*
 
 
 
@@ -50,33 +50,33 @@ Backend tarafında "Clean Architecture" prensiplerine sadık kalınarak, sorumlu
 
 
 
-\*\*Tamamlananlar:\*\*
+*\*Tamamlananlar:\*\*
 
-\- \[x] Backend proje kurulumu ve temizliği.
+- \[x] Backend proje kurulumu ve temizliği.
 
-\- \[x] Veritabanı tablolarının (Entities) tasarımı.
+- \[x] Veritabanı tablolarının (Entities) tasarımı.
 
-\- \[x] DbContext ve SQLite konfigürasyonu.
+- \[x] DbContext ve SQLite konfigürasyonu.
 
-\- \[x] Sipariş oluşturma ve Listeleme endpoint'leri.
+- \[x] Sipariş oluşturma ve Listeleme endpoint'leri.
 
-\- \[x] TenantID (İşletme) bazlı veri izolasyonu.
-
-
-
-\*\*Eksik Kalan / Yapılacaklar:\*\*
-
-\- \[ ] `Program.cs` servis kayıtlarının tamamlanması.
-
-\- \[ ] Veritabanı migration işlemleri.
-
-\- \[ ] Frontend (React) geliştirmesi.
-
-\- \[ ] Test süreçleri.
+- \[x] TenantID (İşletme) bazlı veri izolasyonu.
 
 
 
-\## 💡 Karşılaşılan Zorluklar
+*\*Eksik Kalan / Yapılacaklar:\*\*
+
+- \[ ] `Program.cs` servis kayıtlarının tamamlanması.
+
+- \[ ] Veritabanı migration işlemleri.
+
+- \[ ] Frontend (React) geliştirmesi.
+
+- \[ ] Test süreçleri.
+
+
+
+## 💡 Karşılaşılan Zorluklar
 
 Projenin mimarisini kurgularken, "Basit ama genişletilebilir" dengesini kurmak üzerine yoğunlaştım. Özellikle `TenantId` kontrolünün güvenli bir şekilde `Header` üzerinden yönetilmesi önceliklendirildi.
 
@@ -84,5 +84,5 @@ Projenin mimarisini kurgularken, "Basit ama genişletilebilir" dengesini kurmak 
 
 ---
 
-\*Geliştirici: Mehmet Sönmez\*
+*Geliştirici: Mehmet Sönmez\*
 
