@@ -10,11 +10,11 @@ Bu proje, Mayday Yazılım yetkinlik değerlendirmesi kapsamında geliştirilmek
 
 Basit bir \*\*Multi-Tenant (Çoklu Kiracı)\*\* yapısına sahip sipariş yönetim sistemidir. 
 
-- \*\*Backend:\*\* .NET Core Web API (ASP.NET Core)
+- *\*Backend:*\* .NET Core Web API (ASP.NET Core)
 
-- \*\*Veritabanı:\*\* SQLite (Taşınabilirlik ve hız için seçildi)
+- *\*Veritabanı:*\* SQLite (Taşınabilirlik ve hız için seçildi)
 
-- \*\*Frontend:\*\* React (Geliştirme aşamasında)
+- *\*Frontend:*\* React (Geliştirme aşamasında)
 
 
 
@@ -22,11 +22,11 @@ Basit bir \*\*Multi-Tenant (Çoklu Kiracı)\*\* yapısına sahip sipariş yönet
 
 Backend tarafında "Clean Architecture" prensiplerine sadık kalınarak, sorumluluklar katmanlara ayrılmıştır:
 
-- \*\*Entities:\*\* Veritabanı varlıkları (Order, OrderItem)
+- *\*Entities:*\* Veritabanı varlıkları (Order, OrderItem)
 
-- \*\*Data:\*\* Entity Framework Core konfigürasyonları
+- *\*Data:*\* Entity Framework Core konfigürasyonları
 
-- \*\*Controllers:\*\* API uç noktaları ve Tenant filtreleme mantığı
+- *\*Controllers:*\* API uç noktaları ve Tenant filtreleme mantığı
 
 
 
