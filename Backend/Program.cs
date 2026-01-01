@@ -36,6 +36,14 @@ if (app.Environment.IsDevelopment())
 // cors iznini aktif et
 app.UseCors("AllowAll");
 
+// Basit Loglama 
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"[LOG] İstek Geldi: {context.Request.Method} {context.Request.Path} - Zaman: {DateTime.Now}");
+    await next();
+});
+
+
 app.MapControllers();
 
 app.Run();
