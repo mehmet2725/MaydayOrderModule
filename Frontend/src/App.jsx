@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const API_URL = "http://localhost:5005"; 
+// const API_URL = "http://localhost:5005"; 
+const API_URL = "https://maydayordermodule.onrender.com";
 
 // urlden dükkan ismi al, yazmazsam standart olarak restoran1'i al
 const urlParams = new URLSearchParams(window.location.search);
