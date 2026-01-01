@@ -3,7 +3,6 @@ using Backend.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Servisleri Ekleme işlemi
-
 builder.Services.AddControllers();
 
 // Swashbuckle ekranı
@@ -24,9 +23,8 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-
-
-// geliştirme ortamındaysak swagger'ı aç
+// geliştirme ortamındaysak swaggerı aç
+// Not: Render'da Production modunda çalıştığı için Swagger açılmaz, sorun değil. Frontend çalışsın yeter.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -43,7 +41,14 @@ app.Use(async (context, next) =>
     await next();
 });
 
-
 app.MapControllers();
+
+// Uygulama her başladığında veritabanı yoksa sıfırdan oluşturur.
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+}
+// ----------------------------
 
 app.Run();
